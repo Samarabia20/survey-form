@@ -1,65 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Be your own boss!</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width scale=1.0">
-  </head>
-  <body>
-    
-    <h1 id="title">Be your own boss!</h1>
-    <p id="description">What are your biggest obstacles to starting a business?</p>
-    <div class="container">
-    <form id="Be-your-own-boss" action="#" method="post">
-      <fieldset class="one">
-      <label id="name-label" for="name" >Name<input required placeholder="Name" type="text"   id="name"> </label>
-       <label id="email-label" for="email">Email<input  placeholder="Email" type="email" id="email" required> </label>
-        <label id="age-label" for="age" >Age<input placeholder="Age" max="10" min="6" type="age" id="age"> </label>
-      
-       
-  <label for="dropdown">What do you do for a living? <select id="dropdown">
-   <option value="No selection">Select One</option>
-    <option value="Unemployed">Unemployed</option>
-     <option value="Working">Working Professional (full time)</option>
-      <option value="Part time">Part time job</option>
-       <option value="Prefer not">Prefer not say</option>
-     <option value="Others">Others</option>
-    </select> </label>
-        </fieldset>
-         <fieldset>
-            Do you think that the lack of support or advice has prevented you from starting your own business?
- <label class="radio" for="def"> <input id="def" name="recommend" type="radio"   value="Definitely" checked>  Definitely </label>
-          <label class="radio" for="maybe"> <input id="maybe" name="recommend" value="Maybe" type="radio">  Maybe</label>
-        <label class="radio" for="not">    <input id="not" name="recommend" type="radio" value="Not Sure"> Not Sure </label>
-             </fieldset>
-             <fieldset>
-               <label for="dropdown-two">What kind of resources or information would be most helpful to you in overcoming obstacles and starting your own business?               </label>
-               <select name="feature" id="dropdown-two" >
-                 <option value="Default">Select an Option</option>
-                  <option value="Financing">Financing</option>
-                   <option value="Training">Training</option>
-                    <option value="Networking">Networking</option>
-                     <option value="Market information">Market information</option>
-               </select>
-               </label>
-             </fieldset>
-             <fieldset>
-                Are there any other resources or information that you think are essential for starting a business? (Check all that apply)
-               <label class="check" for="Yes"><input  type="checkbox" id="Yes" name="Yes" value="yes">Yes, access to tools and software for business management.</label>
-                 <label class="check"for="Yes"><input type="checkbox" id="Yes" name="Yes" value="yes">Yes, information on business legislation and regulations.</label>
-                   <label  class="check" for="Yes"><input  type="checkbox" name="Yes" value="yes" id="Challenges">Yes, psychological and emotional support to face challenges.</label>
-                     <label class="check" for="Yes"><input type="checkbox"  id="Yes" name="Yes" value="yes">Yes, access to experts in different areas of the business.</label>
-                      <label class="check" for="I'm"><input type="checkbox"  id="I'm" name="I'm" value="yes">I'm not sure at this time.</label> 
-             </fieldset>
-             <fieldset>
-               <label for="comments">If you could remove just one obstacle to starting a business, what would it be?
-
-               </label>
-               <textarea id="comments" name="Comments"> </textarea>
-             </fieldset>
-             <input type="submit" id="submit"></input>
-    </form>
-    </div>
-  </body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Be Your Own Boss! Survey</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1 id="title">Be Your Own Boss!</h1> 
+        <p id="description">Are you ready to take control of your future? We want to hear about your entrepreneurial dreams! Fill out this short survey to share your ideas and experiences. 
+        <form id="survey-form"> 
+            <label for="name-label" id="name-label">Name:</label> 
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required> 
+ 
+            <label for="email-label" id="email-label">Email:</label> 
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required> 
+ 
+            <label for="number-label" id="number-label">Years of experience:</label> 
+            <input type="number" id="number" name="number" min="0" max="50" placeholder="Enter your experience (years)" required> 
+ 
+            <label for="dropdown">What industry are you interested in?</label> 
+            <select id="dropdown" name="dropdown"> 
+                <option value="tech">Technology</option> 
+                <option value="food">Food &amp; Beverage</option> 
+                <option value="fashion">Fashion &amp; Apparel</option> 
+                <option value="other">Other</option> 
+            </select> 
+ 
+            <fieldset> 
+                <legend>What motivates you to be your own boss?</legend> 
+                <input type="radio" id="freedom" name="motivation" value="freedom" required> 
+                <label for="freedom">Freedom and flexibility</label><br> 
+                <input type="radio" id="passion" name="motivation" value="passion"> 
+                <label for="passion">Following my passion</label><br> 
+                <input type="radio" id="income" name="motivation" value="income"> 
+                <label for="income">Higher income potential</label> 
+            </fieldset> 
+ 
+            <fieldset> 
+                <legend>What are your biggest concerns about starting a business?</legend> 
+                <input type="checkbox" id="funding" name="concerns" value="funding"> 
+                <label for="funding">Securing funding</label><br> 
+                <input type="checkbox" id="competition" name="concerns" value="competition"> 
+                <label for="competition">Competition</label><br> 
+                <input type="checkbox" id="marketing" name="concerns" value="marketing"> 
+                <label for="marketing">Marketing and promotion</label><br> 
+                <input type="checkbox" id="time" name="concerns" value="time"> 
+                <label for="time">Time commitment</label> 
+            </fieldset> 
+ 
+            <label for="comments">Additional comments or questions:</label> 
+            <textarea id="comments" name="comments" placeholder="Share your thoughts!"></textarea> 
+ 
+            <button type="submit" id="submit">Submit</button> 
+        </form> 
+    </div> 
+    <script src="script.js"></script> 
+</body> 
+</html> 
